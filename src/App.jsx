@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-// Завдання 1: Використання refs для доступу до DOM елементів
+
 function RefExample() {
     const inputRef = useRef(null);
 
@@ -17,7 +17,7 @@ function RefExample() {
     );
 }
 
-// Завдання 2: Використання portals для рендерингу в іншу частину DOM
+
 function Modal({ isOpen, onClose }) {
     if (!isOpen) return null;
 
@@ -43,7 +43,7 @@ function PortalExample() {
     );
 }
 
-// Завдання 3: Використання fragments для групування елементів
+
 const users = [
     { name: 'Олег', age: 30 },
     { name: 'Марія', age: 25 },
@@ -62,7 +62,7 @@ function UserList() {
     );
 }
 
-// Завдання 4: Комбінування refs, portals та fragments
+
 function TaskList() {
     const tasks = [
         'Завдання 1',
@@ -101,7 +101,7 @@ function TaskList() {
     );
 }
 
-// Основний додаток
+
 function App() {
     return (
         <div>
